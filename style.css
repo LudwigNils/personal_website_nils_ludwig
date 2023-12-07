@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@300&family=Titillium+Web:ital,wght@1,200&display=swap');
+
+/* =======================GENERAL======================= */
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: #2f2f2f;
+  transition: 0s color;
+}
+a:hover {
+  color: #D98C62;
+  transition: 0.4s color;
+}
+body {
+  color: #2f2f2f;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 50rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+p {
+  margin-bottom: 0.5em;
+}
+/* ===================FONTS============================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+p, a, li {
+  font-family: 'Roboto Slab', serif;
+}
+/* ====================LOGO============================= */
+#logo p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0;
+}
+#logo h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+#logo h1 a {
+  color: #00ADB5;
+  text-decoration: none;
+}
+
+#logo span {
+  color: #D98C62;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* ====================NAVIGATION======================= */
+navbar {
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+nav ul li a:hover, nav ul li.current-menu-item a {
+  color: #2f2f2f;
+  text-decoration: underline;
+}
+
+
+/* ====================SECTIONS========================= */
+.section {
+  text-align: center;
+}
+.section h1, h2 {
+  color: #00ADB5;
+  font-size: 2rem;
+}
+/* ====================ABOUT SECTION==================== */
+#about img {
+  display: block;
+  max-height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.44);
+}
+/* ====================CONTACT SECTION==================== */
+
+section#contact {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+#about #contact iconify-icon {
+  font-size: 2rem;
+  padding: 1rem;
+}
+/* ====================STACK SECTION==================== */
+
+#tech_stack_icons {
+  max-width: 680px;
+  margin: auto;
+  font-size: 4rem;
+}
+
+#stack p {
+  margin-bottom: 2rem;
+}
+#tech_stack_icons iconify-icon {
+  padding: 0.6rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.44);
+}
+/* ====================BLOG SECTION===================== */
+
+section#logs.section {
+  margin-top: 5rem;
+}
+section#logs.section .blogEntry {
+  text-align: justify;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  background-color: #D98C62;
+  color: white;
+  border-style: none;
+  border-radius: 0.3rem;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #00ADB5;
+}
+
+/* Navigation */
+
+nav li {
+  list-style-type: none;
+}
+
+hr {
+  border-top: 0.5px solid gray ;
+}
+
+/* Navigation */
+nav {
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li a {
+  padding: 0 1rem;
+  text-align: center;
+}
